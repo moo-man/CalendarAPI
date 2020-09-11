@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CalendarAPI.Service
+namespace CalendarAPI
 {
     public abstract class CalendarElement
     {
-        string content;
-        Campaign campaign;
-        string date;
+        protected string content;
+        protected Campaign campaign;
+        protected string date;
 
-        public string Content { get; set; }
+        public string Content { get { return content; } set { content = value; } }
 
-        public Campaign Campaign { get; set; }
+        public Campaign Campaign { get { return campaign; } set { campaign = value; } }
 
         public string Date { 
             get {
@@ -27,8 +27,6 @@ namespace CalendarAPI.Service
                     return;
             }
         }
-
-
 
         public static bool VerifyDate(string dateString)
         {
@@ -57,6 +55,10 @@ namespace CalendarAPI.Service
         public static int compareDate(CalendarElement x, CalendarElement y)
         {
             return HarptosCalendar.FarthestInTime(x.Date, y.Date);
+        }
+        public int compareTo(CalendarElement element)
+        {
+            return compareDate(this, element);
         }
     }
 }

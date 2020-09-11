@@ -100,12 +100,12 @@ namespace CalendarAPI
             {
                 Note endNote = getCurrentDateOrEndNote();
                 if (isEnded())
-                    endNote.NoteContent = newName + " ended.";
+                    endNote.Content= newName + " ended.";
                 else
-                    endNote.NoteContent = "Current Date";
+                    endNote.Content = "Current Date";
 
-                Note startNote = notes.Find(x => x.NoteContent == name + " began!");
-                startNote.editNoteContent(newName + " began!");
+                Note startNote = notes.Find(x => x.Content == name + " began!");
+                startNote.Content = newName + " began!";
 
                 name = newName;
             }
@@ -113,15 +113,15 @@ namespace CalendarAPI
 
         public void setStartDate(string newStartDate)
         {
-            Note startNote = notes.Find(x => x.NoteContent == name + " began!");
-            startNote.editDate(newStartDate);
+            Note startNote = notes.Find(x => x.Content == name + " began!");
+            startNote.Content = newStartDate;
         }
 
         /*public void setStartDate(string newStartDate, string newCampaigName)
         {
-            Note startNote = notes.Find(x => x.NoteContent == name + " began!");
+            Note startNote = notes.Find(x => x.Content == name + " began!");
             startNote.editDate(newStartDate);
-            startNote.editNoteContent(newCampaigName + " began!");
+            startNote.editContent(newCampaigName + " began!");
         }*/
 
         public void setCurrentDate(int m, int d, int y)
@@ -148,7 +148,7 @@ namespace CalendarAPI
 
         public Note returnBeginNote()
         {
-            return notes.Find(x => x.NoteContent == Name + " began!");
+            return notes.Find(x => x.Content == Name + " began!");
         }
 
         #region starting/ending campaign
@@ -157,7 +157,7 @@ namespace CalendarAPI
             Note endNote = findNote("Current Date");
             if (endNote == null)
                 return;
-            endNote.NoteContent = endNote.Campaign.Name + " ended.";
+            endNote.Content = endNote.Campaign.Name + " ended.";
         }
 
         public void startCampaign()
@@ -165,7 +165,7 @@ namespace CalendarAPI
             Note endNote = findNote(Name + " ended.");
             if (endNote == null)
                 return;
-            endNote.NoteContent = "Current Date";
+            endNote.Content = "Current Date";
         }
 
         public bool isEnded()
@@ -193,7 +193,7 @@ namespace CalendarAPI
 
         public void addNote(Note noteToAdd)
         {
-            addNote(noteToAdd.Date, noteToAdd.Importance, noteToAdd.NoteContent);
+            addNote(noteToAdd.Date, noteToAdd.Importance, noteToAdd.Content);
         }
 
         public bool deleteNote(Note noteToDelete)
@@ -226,14 +226,14 @@ namespace CalendarAPI
         {
             notes.Sort(delegate (Note x, Note y)
             {
-                return Note.compareNotes(x, y);
+                return Note.compareDate(x, y);
             });
         }
 
         public Note findNote(string content)
         {
             foreach (Note n in notes)
-                if (n.NoteContent == content)
+                if (n.Content == content)
                     return n;
             return null;
         }

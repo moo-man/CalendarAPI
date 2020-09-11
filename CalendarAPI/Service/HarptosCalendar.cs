@@ -1375,7 +1375,8 @@ namespace CalendarAPI
         /// <returns></returns>
         public int daysTo(string dateString)
         {
-            return daysTo(Int32.Parse(dateString.Substring(0, 2)), Int32.Parse(dateString.Substring(2, 2)), Int32.Parse(dateString.Substring(4, 4)));
+            var splitDate = dateString.Split(",");
+            return daysTo(Int32.Parse(splitDate[0]), Int32.Parse(splitDate[1]), Int32.Parse(splitDate[2]));
         }
 
         /// <summary>

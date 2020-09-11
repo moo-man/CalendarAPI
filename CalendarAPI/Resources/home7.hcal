@@ -5,85 +5,85 @@
         {
           "DisplayString": null,
           "Date": "08,23,1486",
-          "NoteContent": "Princes of the Apocalypse began!",
+          "Content": "Princes of the Apocalypse began!",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "08,29,1486",
-          "NoteContent": "Found Clank!",
+          "Content": "Found Clank!",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "09,03,1486",
-          "NoteContent": "Randir and Bronson join the party",
+          "Content": "Randir and Bronson join the party",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "09,04,1486",
-          "NoteContent": "Bronson slays the Urmber Hulk (single-handedly)",
+          "Content": "Bronson slays the Urmber Hulk (single-handedly)",
           "Importance": 0
         },
         {
           "DisplayString": null,
           "Date": "09,09,1486",
-          "NoteContent": "Ohm left the party and went to Rivergard Keep",
+          "Content": "Ohm left the party and went to Rivergard Keep",
           "Importance": 0
         },
         {
           "DisplayString": null,
           "Date": "09,10,1486",
-          "NoteContent": "Father Aurum joins the party",
+          "Content": "Father Aurum joins the party",
           "Importance": 0
         },
         {
           "DisplayString": null,
           "Date": "09,13,1486",
-          "NoteContent": "Iris joins the party",
+          "Content": "Iris joins the party",
           "Importance": 0
         },
         {
           "DisplayString": null,
           "Date": "09,16,1486",
-          "NoteContent": "Marlos Urnrayle was defeated",
+          "Content": "Marlos Urnrayle was defeated",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "09,16,1486",
-          "NoteContent": "Solus joins the party",
+          "Content": "Solus joins the party",
           "Importance": 0
         },
         {
           "DisplayString": null,
           "Date": "09,16,1486",
-          "NoteContent": "Father Aurum was petrified",
+          "Content": "Father Aurum was petrified",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "09,18,1486",
-          "NoteContent": "Liberated Scarlet Moon Hall",
+          "Content": "Liberated Scarlet Moon Hall",
           "Importance": 0
         },
         {
           "DisplayString": null,
           "Date": "09,21,1486",
-          "NoteContent": "Defeated Gar Shatterkeel",
+          "Content": "Defeated Gar Shatterkeel",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "10,11,1486",
-          "NoteContent": "Princes of the Apocalypse ended.",
+          "Content": "Princes of the Apocalypse ended.",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "10,11,1486",
-          "NoteContent": "Imix was defeated",
+          "Content": "Imix was defeated",
           "Importance": 2
         }
       ],
@@ -97,55 +97,55 @@
         {
           "DisplayString": null,
           "Date": "11,31,1485",
-          "NoteContent": "Boat Boys began!",
+          "Content": "Boat Boys began!",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "11,31,1485",
-          "NoteContent": "Ravengard becomes chosen, is defeated by the Heroes of the Wide",
+          "Content": "Ravengard becomes chosen, is defeated by the Heroes of the Wide",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "12,11,1485",
-          "NoteContent": "The party embarks on the Akkalion",
+          "Content": "The party embarks on the Akkalion",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "12,21,1485",
-          "NoteContent": "Arrives at Mintarn",
+          "Content": "Arrives at Mintarn",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "12,21,1485",
-          "NoteContent": "Fought Ziggurd the Cruel",
+          "Content": "Fought Ziggurd the Cruel",
           "Importance": 0
         },
         {
           "DisplayString": null,
           "Date": "12,22,1485",
-          "NoteContent": "Freed the Tyrant of Mintarn",
+          "Content": "Freed the Tyrant of Mintarn",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "12,26,1485",
-          "NoteContent": "Arrived at the Secret hideout",
+          "Content": "Arrived at the Secret hideout",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "12,27,1485",
-          "NoteContent": "Current Date",
+          "Content": "Current Date",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "12,27,1485",
-          "NoteContent": "Defeated the Dragon Cult in Mintarn",
+          "Content": "Defeated the Dragon Cult in Mintarn",
           "Importance": 2
         }
       ],
@@ -155,7 +155,7 @@
           "day": 7,
           "year": 1486,
           "keepTrack": true,
-          "message": "Golden Lions",
+          "Content": "Golden Lions",
           "pausedTime": 0,
           "DisplayString": null
         }
@@ -169,427 +169,427 @@
         {
           "DisplayString": null,
           "Date": "10,11,1486",
-          "NoteContent": "Hand of Fate began!",
+          "Content": "Hand of Fate began!",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "10,25,1486",
-          "NoteContent": "Fernrisbane was acquired",
+          "Content": "Fernrisbane was acquired",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "01,20,1487",
-          "NoteContent": "Arrived at Khanall and fought with the Janassars",
+          "Content": "Arrived at Khanall and fought with the Janassars",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "01,21,1487",
-          "NoteContent": "Met the Illithid",
+          "Content": "Met the Illithid",
           "Importance": 0
         },
         {
           "DisplayString": null,
           "Date": "01,28,1487",
-          "NoteContent": "SPIDERS AT RUTAWWA",
+          "Content": "SPIDERS AT RUTAWWA",
           "Importance": 0
         },
         {
           "DisplayString": null,
           "Date": "02,09,1487",
-          "NoteContent": "Fought at Endurance Rock",
+          "Content": "Fought at Endurance Rock",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "02,12,1487",
-          "NoteContent": "Explored the ruins of Jassan",
+          "Content": "Explored the ruins of Jassan",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "02,29,1487",
-          "NoteContent": "Solus gets cucked, Iris abandoned in Candlekeep",
+          "Content": "Solus gets cucked, Iris abandoned in Candlekeep",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "03,01,1487",
-          "NoteContent": "Gave Ethreain's skeleton to Renwick",
+          "Content": "Gave Ethreain's skeleton to Renwick",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "03,01,1487",
-          "NoteContent": "Teleport back to Dessarin Valley to consult Renwick",
+          "Content": "Teleport back to Dessarin Valley to consult Renwick",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "03,03,1487",
-          "NoteContent": "Slew Nurvureem, the Dark Lady",
+          "Content": "Slew Nurvureem, the Dark Lady",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "03,05,1487",
-          "NoteContent": "Iris leaves the party, stays with Aurum",
+          "Content": "Iris leaves the party, stays with Aurum",
           "Importance": 0
         },
         {
           "DisplayString": null,
           "Date": "03,06,1487",
-          "NoteContent": "Party fights Zephyr",
+          "Content": "Party fights Zephyr",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "03,07,1487",
-          "NoteContent": "Iris begins construction and research",
+          "Content": "Iris begins construction and research",
           "Importance": 0
         },
         {
           "DisplayString": null,
           "Date": "03,16,1487",
-          "NoteContent": "Almraiven is liberated",
+          "Content": "Almraiven is liberated",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "03,19,1487",
-          "NoteContent": "Reanimated Ohm",
+          "Content": "Reanimated Ohm",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "03,20,1487",
-          "NoteContent": "Defeated Professor Nagili",
+          "Content": "Defeated Professor Nagili",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "03,27,1487",
-          "NoteContent": "Cleared St. Wityn's Monastery",
+          "Content": "Cleared St. Wityn's Monastery",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "04,09,1487",
-          "NoteContent": "Discover Allyn's Anvil",
+          "Content": "Discover Allyn's Anvil",
           "Importance": 0
         },
         {
           "DisplayString": null,
           "Date": "04,16,1487",
-          "NoteContent": "BRONSON ACTIVATES",
+          "Content": "BRONSON ACTIVATES",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "04,16,1487",
-          "NoteContent": "Ohm is consecrated",
+          "Content": "Ohm is consecrated",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "04,31,1487",
-          "NoteContent": "Adir draws Temperance and the World",
+          "Content": "Adir draws Temperance and the World",
           "Importance": 0
         },
         {
           "DisplayString": null,
           "Date": "04,31,1487",
-          "NoteContent": "Massacre at Mintar",
+          "Content": "Massacre at Mintar",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "05,01,1487",
-          "NoteContent": "Saved Randir, fled from Mintar",
+          "Content": "Saved Randir, fled from Mintar",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "05,01,1487",
-          "NoteContent": "Acquired the Battlecloak of Vycaena",
+          "Content": "Acquired the Battlecloak of Vycaena",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "05,02,1487",
-          "NoteContent": "Iris reveals her scars from Nurvureem",
+          "Content": "Iris reveals her scars from Nurvureem",
           "Importance": 0
         },
         {
           "DisplayString": null,
           "Date": "05,16,1487",
-          "NoteContent": "Arrived in Almraiven",
+          "Content": "Arrived in Almraiven",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "05,18,1487",
-          "NoteContent": "Left Almraiven for Memnon",
+          "Content": "Left Almraiven for Memnon",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "05,21,1487",
-          "NoteContent": "Arrived at the Monastery of St. Aban",
+          "Content": "Arrived at the Monastery of St. Aban",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "05,22,1487",
-          "NoteContent": "Holy shit more eldritch spiders (Zephyr receives the Manacles of St. Aban)",
+          "Content": "Holy shit more eldritch spiders (Zephyr receives the Manacles of St. Aban)",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "05,22,1487",
-          "NoteContent": "Level up 15-16",
+          "Content": "Level up 15-16",
           "Importance": 0
         },
         {
           "DisplayString": null,
           "Date": "05,23,1487",
-          "NoteContent": "Adir draws The Hanged Man",
+          "Content": "Adir draws The Hanged Man",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "06,05,1487",
-          "NoteContent": "Saved Tarik",
+          "Content": "Saved Tarik",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "06,10,1487",
-          "NoteContent": "Resurrected Father Jahid",
+          "Content": "Resurrected Father Jahid",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "06,18,1487",
-          "NoteContent": "Arrived in Jassan",
+          "Content": "Arrived in Jassan",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "06,26,1487",
-          "NoteContent": "Met Hasim",
+          "Content": "Met Hasim",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "06,26,1487",
-          "NoteContent": "Arrived in Memnon",
+          "Content": "Arrived in Memnon",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "06,27,1487",
-          "NoteContent": "Defeated Prama Ningra and teleported back to Salvation and Hasim was Plane Shifted",
+          "Content": "Defeated Prama Ningra and teleported back to Salvation and Hasim was Plane Shifted",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "07,01,1487",
-          "NoteContent": "Found the Blue Dragon lair",
+          "Content": "Found the Blue Dragon lair",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "07,16,1487",
-          "NoteContent": "Arrived at Janessar Hideout\r\n",
+          "Content": "Arrived at Janessar Hideout\r\n",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "07,26,1487",
-          "NoteContent": "Arrive in Calimport",
+          "Content": "Arrive in Calimport",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "07,26,1487",
-          "NoteContent": "Hasim returns",
+          "Content": "Hasim returns",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "07,27,1487",
-          "NoteContent": "Wrecked Mansoor's Party",
+          "Content": "Wrecked Mansoor's Party",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "07,30,1487",
-          "NoteContent": "Arrived at St. Taril's, fought the undead below, had to retreat.",
+          "Content": "Arrived at St. Taril's, fought the undead below, had to retreat.",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "07,31,1487",
-          "NoteContent": "Left St. Taril's",
+          "Content": "Left St. Taril's",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "08,09,1487",
-          "NoteContent": "Arrived in St. Noradnar's Hermitage, Sanctified it as the Hand's Hermitage.",
+          "Content": "Arrived in St. Noradnar's Hermitage, Sanctified it as the Hand's Hermitage.",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "08,19,1487",
-          "NoteContent": "Destroyed Crixalis at the Fane of the Scorpion, received a shard of the Calimemnon Crystal",
+          "Content": "Destroyed Crixalis at the Fane of the Scorpion, received a shard of the Calimemnon Crystal",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "08,20,1487",
-          "NoteContent": "Level 17",
+          "Content": "Level 17",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "08,20,1487",
-          "NoteContent": "Left the Fane of the Scorpion",
+          "Content": "Left the Fane of the Scorpion",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "08,29,1487",
-          "NoteContent": "Searched for the crystal shard, not found. Teleported to Waterdeep.",
+          "Content": "Searched for the crystal shard, not found. Teleported to Waterdeep.",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "09,01,1487",
-          "NoteContent": "Arrived at St. Ihrvyn",
+          "Content": "Arrived at St. Ihrvyn",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "09,02,1487",
-          "NoteContent": "Teleported to Almraiven",
+          "Content": "Teleported to Almraiven",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "09,02,1487",
-          "NoteContent": "Fought at Volothamp",
+          "Content": "Fought at Volothamp",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "09,07,1487",
-          "NoteContent": "Arrived back at St. Taril's ",
+          "Content": "Arrived back at St. Taril's ",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "09,08,1487",
-          "NoteContent": "Teleported to Waterdeep to shop",
+          "Content": "Teleported to Waterdeep to shop",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "09,12,1487",
-          "NoteContent": "Arrived at House of the Broken God, defeated Ralayan.",
+          "Content": "Arrived at House of the Broken God, defeated Ralayan.",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "09,17,1487",
-          "NoteContent": "Arrived at St. Rucir, investigated.",
+          "Content": "Arrived at St. Rucir, investigated.",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "09,18,1487",
-          "NoteContent": "Arrived at St. Saril's Priory",
+          "Content": "Arrived at St. Saril's Priory",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "09,19,1487",
-          "NoteContent": "Left St. Saril's Priory",
+          "Content": "Left St. Saril's Priory",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "09,29,1487",
-          "NoteContent": "Arrived at St. Liwan's Blessing",
+          "Content": "Arrived at St. Liwan's Blessing",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "10,08,1487",
-          "NoteContent": "Cleansed Dobla's",
+          "Content": "Cleansed Dobla's",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "10,11,1487",
-          "NoteContent": "Arrived at Lost Ajhuutal during the night - tsunami and earthquake on the lost apostaleum",
+          "Content": "Arrived at Lost Ajhuutal during the night - tsunami and earthquake on the lost apostaleum",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "10,12,1487",
-          "NoteContent": "Destroyed the Spider that Waits on a scouting mission.",
+          "Content": "Destroyed the Spider that Waits on a scouting mission.",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "10,16,1487",
-          "NoteContent": "Arrived at Almraiven, threw a party that night to fundraise.",
+          "Content": "Arrived at Almraiven, threw a party that night to fundraise.",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "10,22,1487",
-          "NoteContent": "Arrived at Suldophor and stopped the portals",
+          "Content": "Arrived at Suldophor and stopped the portals",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "10,23,1487",
-          "NoteContent": "Tsunami'd Suldophor",
+          "Content": "Tsunami'd Suldophor",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "10,28,1487",
-          "NoteContent": "Arrived at Almraiven",
+          "Content": "Arrived at Almraiven",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "11,08,1487",
-          "NoteContent": "Fought the Queen",
+          "Content": "Fought the Queen",
           "Importance": 2
         },
         {
           "DisplayString": "• (HOF) Teleported to the Pyramid \n",
           "Date": "11,11,1487",
-          "NoteContent": "Teleported to the Pyramid",
+          "Content": "Teleported to the Pyramid",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "11,12,1487",
-          "NoteContent": "Current Date",
+          "Content": "Current Date",
           "Importance": 2
         },
         {
           "DisplayString": "• (HOF) Defeated Sapphiraktar the Demidracolich \n",
           "Date": "11,12,1487",
-          "NoteContent": "Defeated Sapphiraktar the Demidracolich",
+          "Content": "Defeated Sapphiraktar the Demidracolich",
           "Importance": 2
         }
       ],
@@ -599,7 +599,7 @@
           "day": 22,
           "year": 1487,
           "keepTrack": true,
-          "message": "Adir's Clone is done",
+          "Content": "Adir's Clone is done",
           "pausedTime": 0,
           "DisplayString": "• (TIMER) Adir's Clone is done (in 41 days)"
         },
@@ -608,7 +608,7 @@
           "day": 1,
           "year": 1488,
           "keepTrack": true,
-          "message": "Solus's Clone is done",
+          "Content": "Solus's Clone is done",
           "pausedTime": 0,
           "DisplayString": "• (TIMER) Solus's Clone is done (in 50 days)"
         },
@@ -617,7 +617,7 @@
           "day": 2,
           "year": 1488,
           "keepTrack": true,
-          "message": "Randir's Clone is done",
+          "Content": "Randir's Clone is done",
           "pausedTime": 0,
           "DisplayString": "• (TIMER) Randir's Clone is done (in 51 days)"
         },
@@ -626,7 +626,7 @@
           "day": 3,
           "year": 1488,
           "keepTrack": true,
-          "message": "Zephyr's Clone is done",
+          "Content": "Zephyr's Clone is done",
           "pausedTime": 0,
           "DisplayString": "• (TIMER) Zephyr's Clone is done (in 52 days)"
         },
@@ -635,7 +635,7 @@
           "day": 4,
           "year": 1488,
           "keepTrack": true,
-          "message": "Iris's Clone is done",
+          "Content": "Iris's Clone is done",
           "pausedTime": 0,
           "DisplayString": "• (TIMER) Iris's Clone is done (in 53 days)"
         },
@@ -644,7 +644,7 @@
           "day": 22,
           "year": 1487,
           "keepTrack": true,
-          "message": "Speak with Dead on Beholder",
+          "Content": "Speak with Dead on Beholder",
           "pausedTime": 0,
           "DisplayString": "• (TIMER) Speak with Dead on Beholder (in 10 days)"
         }
@@ -658,247 +658,247 @@
         {
           "DisplayString": null,
           "Date": "11,15,1486",
-          "NoteContent": "Heroes of Faerun began!",
+          "Content": "Heroes of Faerun began!",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "11,16,1486",
-          "NoteContent": "Escape from Velkynvelve",
+          "Content": "Escape from Velkynvelve",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "11,24,1486",
-          "NoteContent": "Met Ploopploopeen",
+          "Content": "Met Ploopploopeen",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "11,24,1486",
-          "NoteContent": "Demogorgon destroyed Sloobludop",
+          "Content": "Demogorgon destroyed Sloobludop",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "11,26,1486",
-          "NoteContent": "Started learning Common and sign language",
+          "Content": "Started learning Common and sign language",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "12,15,1486",
-          "NoteContent": "Arrived in Gracklstugh",
+          "Content": "Arrived in Gracklstugh",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "12,15,1486",
-          "NoteContent": "Met Werz Saltzbaron",
+          "Content": "Met Werz Saltzbaron",
           "Importance": 0
         },
         {
           "DisplayString": null,
           "Date": "12,16,1486",
-          "NoteContent": "Sarith leaves with the myconids",
+          "Content": "Sarith leaves with the myconids",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "12,16,1486",
-          "NoteContent": "Started to find Droki",
+          "Content": "Started to find Droki",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "12,16,1486",
-          "NoteContent": "Jett-Kai dies.",
+          "Content": "Jett-Kai dies.",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "12,17,1486",
-          "NoteContent": "Found the egg",
+          "Content": "Found the egg",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "12,18,1486",
-          "NoteContent": "Left Gracklstugh",
+          "Content": "Left Gracklstugh",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "12,18,1486",
-          "NoteContent": "All bridges burnt in Gracklstugh",
+          "Content": "All bridges burnt in Gracklstugh",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "12,30,1486",
-          "NoteContent": "Defeated Yestabrod, gross",
+          "Content": "Defeated Yestabrod, gross",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "12,30,1486",
-          "NoteContent": "Escaped Neverlight Grove",
+          "Content": "Escaped Neverlight Grove",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "12,30,1486",
-          "NoteContent": "Arrived at Neverlight Grove",
+          "Content": "Arrived at Neverlight Grove",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "01,05,1487",
-          "NoteContent": "Found the Lost Tomb of Brysis",
+          "Content": "Found the Lost Tomb of Brysis",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "01,08,1487",
-          "NoteContent": "Escaped the Oozing Temple",
+          "Content": "Escaped the Oozing Temple",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "01,21,1487",
-          "NoteContent": "Arrives in Blingdenstone",
+          "Content": "Arrives in Blingdenstone",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "01,25,1487",
-          "NoteContent": "Came back to Blingdenstone after not finding Entemoch's Boon",
+          "Content": "Came back to Blingdenstone after not finding Entemoch's Boon",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "01,29,1487",
-          "NoteContent": "Found Entemoch's Boon",
+          "Content": "Found Entemoch's Boon",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "02,01,1487",
-          "NoteContent": "Defeated the Pudding King",
+          "Content": "Defeated the Pudding King",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "02,03,1487",
-          "NoteContent": "Emerged from the Underdark!",
+          "Content": "Emerged from the Underdark!",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "02,04,1487",
-          "NoteContent": "Rock Elemental crumbles",
+          "Content": "Rock Elemental crumbles",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "02,16,1487",
-          "NoteContent": "Arrived in Yartar",
+          "Content": "Arrived in Yartar",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "02,29,1487",
-          "NoteContent": "Arrives at Gauntlgrym",
+          "Content": "Arrives at Gauntlgrym",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "04,04,1487",
-          "NoteContent": "Arrived at Mantol-Derith",
+          "Content": "Arrived at Mantol-Derith",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "04,15,1487",
-          "NoteContent": "Met Xazax the Beholder",
+          "Content": "Met Xazax the Beholder",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "04,15,1487",
-          "NoteContent": "Fraz Urb'luu's gem was destroyed",
+          "Content": "Fraz Urb'luu's gem was destroyed",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "06,04,1487",
-          "NoteContent": "Arrived in Gravenhollow",
+          "Content": "Arrived in Gravenhollow",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "06,13,1487",
-          "NoteContent": "Defeated Karazikar ($$$$$$$$$$$$)",
+          "Content": "Defeated Karazikar ($$$$$$$$$$$$)",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "06,22,1487",
-          "NoteContent": "Arrive at Araj",
+          "Content": "Arrive at Araj",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "06,27,1487",
-          "NoteContent": "Basilisk Eggs Hatch",
+          "Content": "Basilisk Eggs Hatch",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "07,27,1487",
-          "NoteContent": "Arrive in the Labyrinth",
+          "Content": "Arrive in the Labyrinth",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "08,14,1487",
-          "NoteContent": "Found the Maze Engine",
+          "Content": "Found the Maze Engine",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "08,20,1487",
-          "NoteContent": "Arrive at the Gallery of Angels",
+          "Content": "Arrive at the Gallery of Angels",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "11,01,1487",
-          "NoteContent": "Arrive in Menzoberranzan",
+          "Content": "Arrive in Menzoberranzan",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "11,13,1487",
-          "NoteContent": "Return to Araj",
+          "Content": "Return to Araj",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "11,24,1487",
-          "NoteContent": "Current Date",
+          "Content": "Current Date",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "11,24,1487",
-          "NoteContent": "Arrived back in Araj to betray Vizeran.",
+          "Content": "Arrived back in Araj to betray Vizeran.",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "11,24,1487",
-          "NoteContent": "Defeated Graz'zt and followed Jimjar",
+          "Content": "Defeated Graz'zt and followed Jimjar",
           "Importance": 2
         }
       ],
@@ -912,499 +912,499 @@
         {
           "DisplayString": null,
           "Date": "06,16,1487",
-          "NoteContent": "Storm King's Thunder began!",
+          "Content": "Storm King's Thunder began!",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "06,16,1487",
-          "NoteContent": "Arrived in Nightstone and cleaned the town",
+          "Content": "Arrived in Nightstone and cleaned the town",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "06,17,1487",
-          "NoteContent": ":Saved the Nightstone Villagers",
+          "Content": ":Saved the Nightstone Villagers",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "06,18,1487",
-          "NoteContent": "Left Nightstone",
+          "Content": "Left Nightstone",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "06,20,1487",
-          "NoteContent": "Arrived in Waterdeep",
+          "Content": "Arrived in Waterdeep",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "06,21,1487",
-          "NoteContent": "Leave Waterdeep",
+          "Content": "Leave Waterdeep",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "06,23,1487",
-          "NoteContent": "Arrive in Goldenfields",
+          "Content": "Arrive in Goldenfields",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "06,24,1487",
-          "NoteContent": "Goldenfields attacked",
+          "Content": "Goldenfields attacked",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "06,25,1487",
-          "NoteContent": "Rest at Goldenflelds",
+          "Content": "Rest at Goldenflelds",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "06,29,1487",
-          "NoteContent": "Arrive in Waterdeep",
+          "Content": "Arrive in Waterdeep",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "07,03,1487",
-          "NoteContent": "Arrive in Amphail",
+          "Content": "Arrive in Amphail",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "07,04,1487",
-          "NoteContent": "Leave Amphail",
+          "Content": "Leave Amphail",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "07,05,1487",
-          "NoteContent": "Met Zephyros",
+          "Content": "Met Zephyros",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "07,06,1487",
-          "NoteContent": "Started toward Amphail",
+          "Content": "Started toward Amphail",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "07,16,1487",
-          "NoteContent": "Left Calling Horns after horses were eaten.",
+          "Content": "Left Calling Horns after horses were eaten.",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "07,21,1487",
-          "NoteContent": "Olostin's Hold",
+          "Content": "Olostin's Hold",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "07,23,1487",
-          "NoteContent": "Talked to Krowen, the archmage of the Moongleam tower.",
+          "Content": "Talked to Krowen, the archmage of the Moongleam tower.",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "07,23,1487",
-          "NoteContent": "Arrived in Everlund",
+          "Content": "Arrived in Everlund",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "07,26,1487",
-          "NoteContent": "Arrives in Silverymoon",
+          "Content": "Arrives in Silverymoon",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "07,29,1487",
-          "NoteContent": "Meets Harshnag",
+          "Content": "Meets Harshnag",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "07,31,1487",
-          "NoteContent": "Arrive in Settlestone",
+          "Content": "Arrive in Settlestone",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "08,01,1487",
-          "NoteContent": "Leave Settlestone",
+          "Content": "Leave Settlestone",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "08,13,1487",
-          "NoteContent": "Arrived in the Eye of the All Father",
+          "Content": "Arrived in the Eye of the All Father",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "08,14,1487",
-          "NoteContent": "Left the Eye of the All Father",
+          "Content": "Left the Eye of the All Father",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "08,16,1487",
-          "NoteContent": "Targen named chief of the Great Worm Tribe",
+          "Content": "Targen named chief of the Great Worm Tribe",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "08,17,1487",
-          "NoteContent": "Leave the Great Worm Cavern",
+          "Content": "Leave the Great Worm Cavern",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "08,19,1487",
-          "NoteContent": "Arrive at the Eye of the All Father with the giant shield",
+          "Content": "Arrive at the Eye of the All Father with the giant shield",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "09,07,1487",
-          "NoteContent": "Arrived Beorunna's Well",
+          "Content": "Arrived Beorunna's Well",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "09,11,1487",
-          "NoteContent": "Arrived at One Stone\r\n",
+          "Content": "Arrived at One Stone\r\n",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "09,21,1487",
-          "NoteContent": "Targen gave a speech to the Great Worm Tribe",
+          "Content": "Targen gave a speech to the Great Worm Tribe",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "09,24,1487",
-          "NoteContent": "Arrived at Eye of the All Father to sacrifice the horn for the location of the Stone Giant Thane",
+          "Content": "Arrived at Eye of the All Father to sacrifice the horn for the location of the Stone Giant Thane",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "10,02,1487",
-          "NoteContent": "Arrived in Mirabar",
+          "Content": "Arrived in Mirabar",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "10,03,1487",
-          "NoteContent": "Left Mirabar in a riverboat",
+          "Content": "Left Mirabar in a riverboat",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "10,05,1487",
-          "NoteContent": "Arrived in Luskan",
+          "Content": "Arrived in Luskan",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "10,09,1487",
-          "NoteContent": "Arrived in Port Llast\r\n",
+          "Content": "Arrived in Port Llast\r\n",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "10,11,1487",
-          "NoteContent": "Arrive in Neverwinter: Teleported to Luskan",
+          "Content": "Arrive in Neverwinter: Teleported to Luskan",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "10,29,1487",
-          "NoteContent": "Arrived at Deadstone Cleft",
+          "Content": "Arrived at Deadstone Cleft",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "10,30,1487",
-          "NoteContent": "Fotlan meets the party",
+          "Content": "Fotlan meets the party",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "10,30,1487",
-          "NoteContent": "Defeated Kayalithica, Rafiq perishes.",
+          "Content": "Defeated Kayalithica, Rafiq perishes.",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "11,04,1487",
-          "NoteContent": "Ignatio proves himself as Shaman",
+          "Content": "Ignatio proves himself as Shaman",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "11,08,1487",
-          "NoteContent": "Arrived in Greymaw Lands",
+          "Content": "Arrived in Greymaw Lands",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "11,09,1487",
-          "NoteContent": "Leave Greymaw Lands",
+          "Content": "Leave Greymaw Lands",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "11,16,1487",
-          "NoteContent": "Arrive in Loudwater, teleport to Silverymoon",
+          "Content": "Arrive in Loudwater, teleport to Silverymoon",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "11,17,1487",
-          "NoteContent": "Leave Silverymoon",
+          "Content": "Leave Silverymoon",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "11,20,1487",
-          "NoteContent": "Met Moog",
+          "Content": "Met Moog",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "11,23,1487",
-          "NoteContent": "Butchered Moog",
+          "Content": "Butchered Moog",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "11,26,1487",
-          "NoteContent": "Went into the High Forest",
+          "Content": "Went into the High Forest",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "11,28,1487",
-          "NoteContent": "Arrived at the Grandfather's Tree",
+          "Content": "Arrived at the Grandfather's Tree",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "12,01,1487",
-          "NoteContent": "Stone Stand",
+          "Content": "Stone Stand",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "12,08,1487",
-          "NoteContent": "Arrived at Silverymoon",
+          "Content": "Arrived at Silverymoon",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "12,09,1487",
-          "NoteContent": "Arrived to Everlund, Teleported to Neverwinter",
+          "Content": "Arrived to Everlund, Teleported to Neverwinter",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "12,13,1487",
-          "NoteContent": "Arrived it Gauntlgrym",
+          "Content": "Arrived it Gauntlgrym",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "12,16,1487",
-          "NoteContent": "Arrived at Morghur's Mound",
+          "Content": "Arrived at Morghur's Mound",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "12,17,1487",
-          "NoteContent": "Found the Relic in Morghur's Mound",
+          "Content": "Found the Relic in Morghur's Mound",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "12,22,1487",
-          "NoteContent": "Arrive at Mirabar",
+          "Content": "Arrive at Mirabar",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "12,30,1487",
-          "NoteContent": "Joined the Dragon Cultists in their Airship",
+          "Content": "Joined the Dragon Cultists in their Airship",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "01,03,1488",
-          "NoteContent": "Arrived at the Svardborg",
+          "Content": "Arrived at the Svardborg",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "01,03,1488",
-          "NoteContent": "Left Svardborg",
+          "Content": "Left Svardborg",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "01,06,1488",
-          "NoteContent": "Arrived at Den of the All Father to drop off treasure",
+          "Content": "Arrived at Den of the All Father to drop off treasure",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "01,09,1488",
-          "NoteContent": "Arrived at Yakfolk village",
+          "Content": "Arrived at Yakfolk village",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "01,10,1488",
-          "NoteContent": "Descended into the Fire Giant mines, retreated to rest at the Yakfolk video",
+          "Content": "Descended into the Fire Giant mines, retreated to rest at the Yakfolk video",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "01,11,1488",
-          "NoteContent": "Fought Duke Zalto, escape with Jasper.",
+          "Content": "Fought Duke Zalto, escape with Jasper.",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "01,12,1488",
-          "NoteContent": "Arrived at Deadsnows",
+          "Content": "Arrived at Deadsnows",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "01,15,1488",
-          "NoteContent": "Turned around to head towards Cloud Giant Castle",
+          "Content": "Turned around to head towards Cloud Giant Castle",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "01,16,1488",
-          "NoteContent": "Arrived at Lyn Armaal, and immediately retreated.",
+          "Content": "Arrived at Lyn Armaal, and immediately retreated.",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "01,19,1488",
-          "NoteContent": "Arrived at Gauntlgrym",
+          "Content": "Arrived at Gauntlgrym",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "01,20,1488",
-          "NoteContent": "Received gifts from Gauntlgrym",
+          "Content": "Received gifts from Gauntlgrym",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "01,21,1488",
-          "NoteContent": "Arrived at Raven Rock, spent the night",
+          "Content": "Arrived at Raven Rock, spent the night",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "01,22,1488",
-          "NoteContent": "Left Raven Rock for Glacial Rift",
+          "Content": "Left Raven Rock for Glacial Rift",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "01,24,1488",
-          "NoteContent": "Fled the Glacial Rift",
+          "Content": "Fled the Glacial Rift",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "01,28,1488",
-          "NoteContent": "Arrived at Grudd Haug during the night",
+          "Content": "Arrived at Grudd Haug during the night",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "01,30,1488",
-          "NoteContent": "Arrived at Flint Rock",
+          "Content": "Arrived at Flint Rock",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "02,01,1488",
-          "NoteContent": "Fotlan turns...",
+          "Content": "Fotlan turns...",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "02,10,1488",
-          "NoteContent": "Arrived in Gauntlgrym",
+          "Content": "Arrived in Gauntlgrym",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "02,13,1488",
-          "NoteContent": "Assaulted the Lyn Armaal during the night",
+          "Content": "Assaulted the Lyn Armaal during the night",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "02,16,1488",
-          "NoteContent": "Arrived in Olostin's Hold",
+          "Content": "Arrived in Olostin's Hold",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "02,18,1488",
-          "NoteContent": "Arrived at Everlund, Teleported to Yartar, Ransacked the guard captain's house and murdered him",
+          "Content": "Arrived at Everlund, Teleported to Yartar, Ransacked the guard captain's house and murdered him",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "02,19,1488",
-          "NoteContent": "Teleported to Maelstrom, then teleported to Yartar",
+          "Content": "Teleported to Maelstrom, then teleported to Yartar",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "03,18,1488",
-          "NoteContent": "Found the Morkoth, Teleported back to Maelstrom",
+          "Content": "Found the Morkoth, Teleported back to Maelstrom",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "03,19,1488",
-          "NoteContent": "Left Maelstrom to find Iymrith, teleported to Mirabar",
+          "Content": "Left Maelstrom to find Iymrith, teleported to Mirabar",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "03,26,1488",
-          "NoteContent": "Met Harshnag at the Eye of the All Father (ruined)",
+          "Content": "Met Harshnag at the Eye of the All Father (ruined)",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "04,06,1488",
-          "NoteContent": "Current Date",
+          "Content": "Current Date",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "04,06,1488",
-          "NoteContent": "Defeated Iymrith/Shaxan",
+          "Content": "Defeated Iymrith/Shaxan",
           "Importance": 2
         }
       ],
@@ -1418,139 +1418,139 @@
         {
           "DisplayString": null,
           "Date": "04,01,1488",
-          "NoteContent": "Waterdeep Dragon Heist began!",
+          "Content": "Waterdeep Dragon Heist began!",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "04,02,1488",
-          "NoteContent": "Remy graduates from the Cooks and bakers guild",
+          "Content": "Remy graduates from the Cooks and bakers guild",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "04,02,1488",
-          "NoteContent": "Floon is possesed by Intellect Devourer",
+          "Content": "Floon is possesed by Intellect Devourer",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "04,03,1488",
-          "NoteContent": "Characters meet Lief, the previous resident, now spectre of Trollskull.",
+          "Content": "Characters meet Lief, the previous resident, now spectre of Trollskull.",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "04,03,1488",
-          "NoteContent": "Characters are attacked at night by what seemed to be 2 drow.",
+          "Content": "Characters are attacked at night by what seemed to be 2 drow.",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "04,03,1488",
-          "NoteContent": "Olliver visits Harborfall for the first time.",
+          "Content": "Olliver visits Harborfall for the first time.",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "04,03,1488",
-          "NoteContent": "Trollskull Manor belongs to the players",
+          "Content": "Trollskull Manor belongs to the players",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "04,04,1488",
-          "NoteContent": "Players meet, and make a friend in Hlam on Mt. Waterdeep",
+          "Content": "Players meet, and make a friend in Hlam on Mt. Waterdeep",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "04,04,1488",
-          "NoteContent": "Remy poisons Emmek Frewn",
+          "Content": "Remy poisons Emmek Frewn",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "04,04,1488",
-          "NoteContent": "Player's meet Vajra Saffahr, the Blackstaff and somewhat willingly join The Grey Hands",
+          "Content": "Player's meet Vajra Saffahr, the Blackstaff and somewhat willingly join The Grey Hands",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "04,05,1488",
-          "NoteContent": "Oliver discovers Esoterica and meets Johan Klaus",
+          "Content": "Oliver discovers Esoterica and meets Johan Klaus",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "04,05,1488",
-          "NoteContent": "Players secure funds from house Phylund for their Tavern",
+          "Content": "Players secure funds from house Phylund for their Tavern",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "04,05,1488",
-          "NoteContent": "Players successfully hunt and capture a displacer beat for House Phylund",
+          "Content": "Players successfully hunt and capture a displacer beat for House Phylund",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "04,06,1488",
-          "NoteContent": "Players travel to the Feywild and defeat Hilda Nettlequeen the Hag.",
+          "Content": "Players travel to the Feywild and defeat Hilda Nettlequeen the Hag.",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "04,06,1488",
-          "NoteContent": "Players head out to find missing children in Undercliff",
+          "Content": "Players head out to find missing children in Undercliff",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "04,06,1488",
-          "NoteContent": "Players travel into the Feywild and meet two Time Traveling Knights. Eremon and Renaud Cassalanter.",
+          "Content": "Players travel into the Feywild and meet two Time Traveling Knights. Eremon and Renaud Cassalanter.",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "04,06,1488",
-          "NoteContent": "Remy stabs Eremon and leaves the party",
+          "Content": "Remy stabs Eremon and leaves the party",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "04,06,1488",
-          "NoteContent": "Players defeat the scarecrows and head into a mysterious forest",
+          "Content": "Players defeat the scarecrows and head into a mysterious forest",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "04,06,1488",
-          "NoteContent": "Players meet Oggle the Boggle",
+          "Content": "Players meet Oggle the Boggle",
           "Importance": 1
         },
         {
           "DisplayString": null,
           "Date": "04,07,1488",
-          "NoteContent": "Duncan, Olliver, and Perry infiltrate Gralhund manor- killing everyone but Hraggram",
+          "Content": "Duncan, Olliver, and Perry infiltrate Gralhund manor- killing everyone but Hraggram",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "04,07,1488",
-          "NoteContent": "Current Date",
+          "Content": "Current Date",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "04,07,1488",
-          "NoteContent": "A Fireball goes off outside Trollskull manor.",
+          "Content": "A Fireball goes off outside Trollskull manor.",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "04,13,1488",
-          "NoteContent": "It's time for Remy to attend church.",
+          "Content": "It's time for Remy to attend church.",
           "Importance": 1
         }
       ],
@@ -1564,61 +1564,61 @@
         {
           "DisplayString": null,
           "Date": "11,27,1385",
-          "NoteContent": "Party at Zelbross!",
+          "Content": "Party at Zelbross!",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "12,01,1385",
-          "NoteContent": "Reluctance Pt.1 ",
+          "Content": "Reluctance Pt.1 ",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "02,15,1466",
-          "NoteContent": "Earthmotes fell",
+          "Content": "Earthmotes fell",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "05,26,1466",
-          "NoteContent": "Current Date",
+          "Content": "Current Date",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "05,26,1466",
-          "NoteContent": "Won the tournament in Dis",
+          "Content": "Won the tournament in Dis",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "08,20,1488",
-          "NoteContent": "Tales of Magnus  began!",
+          "Content": "Tales of Magnus  began!",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "08,21,1488",
-          "NoteContent": "Finished Reluctance, night at the Yawning Portal",
+          "Content": "Finished Reluctance, night at the Yawning Portal",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "08,22,1488",
-          "NoteContent": "Doppelganger Bullshit",
+          "Content": "Doppelganger Bullshit",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "08,23,1488",
-          "NoteContent": "Hellscape",
+          "Content": "Hellscape",
           "Importance": 2
         },
         {
           "DisplayString": null,
           "Date": "08,24,1488",
-          "NoteContent": "How the Earhmotes Lost their Wings",
+          "Content": "How the Earhmotes Lost their Wings",
           "Importance": 2
         }
       ],
@@ -1632,56 +1632,56 @@
     {
       "DisplayString": null,
       "Date": "11,31,1420",
-      "NoteContent": "Solus's Birthday (-10 years age)",
+      "Content": "Solus's Birthday (-10 years age)",
       "Campaign": null,
       "Importance": 2
     },
     {
       "DisplayString": null,
       "Date": "07,02,1431",
-      "NoteContent": "Adir's Birthday",
+      "Content": "Adir's Birthday",
       "Campaign": null,
       "Importance": 2
     },
     {
       "DisplayString": null,
       "Date": "05,23,1458",
-      "NoteContent": "Randir's Birthday",
+      "Content": "Randir's Birthday",
       "Campaign": null,
       "Importance": 2
     },
     {
       "DisplayString": null,
       "Date": "05,12,1461",
-      "NoteContent": "Zephyr's Birthday",
+      "Content": "Zephyr's Birthday",
       "Campaign": null,
       "Importance": 2
     },
     {
       "DisplayString": null,
       "Date": "08,19,1464",
-      "NoteContent": "Iris's Birthday",
+      "Content": "Iris's Birthday",
       "Campaign": null,
       "Importance": 2
     },
     {
       "DisplayString": null,
       "Date": "04,05,1488",
-      "NoteContent": "It is Goldenight in Waterdeep!",
+      "Content": "It is Goldenight in Waterdeep!",
       "Campaign": null,
       "Importance": 2
     },
     {
       "DisplayString": null,
       "Date": "04,07,1488",
-      "NoteContent": "It is Guildsmeet! A party is going on in the Waterdeep Market!",
+      "Content": "It is Guildsmeet! A party is going on in the Waterdeep Market!",
       "Campaign": null,
       "Importance": 2
     },
     {
       "DisplayString": null,
       "Date": "09,21,1487",
-      "NoteContent": "It is Runemeet! All Uthgardt pilgrimage to their tribe's respective Spirit Mounds.",
+      "Content": "It is Runemeet! All Uthgardt pilgrimage to their tribe's respective Spirit Mounds.",
       "Campaign": null,
       "Importance": 2
     }

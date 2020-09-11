@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Resources;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
+using CalendarAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
@@ -46,9 +48,11 @@ namespace CalendarAPI
 
         [HttpGet]
         [Route("getCalendarData")]
-        public CalendarContents GetCalendarData()
+        public CalendarDataModel GetCalendarData()
         {
-            return calendar;
+            var calendarData = new CalendarDataModel();
+            calendarData.CurrentDayElements = calendar.returnNotesToDisplay().ToArray<CalendarElement>().Concat(calendar.returnTimersToDisplay().ToArray<CalendarElement>()).ToArray();
+            return calendarData;
         }
     }
 }

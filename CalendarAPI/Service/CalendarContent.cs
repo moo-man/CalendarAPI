@@ -75,7 +75,7 @@ namespace CalendarAPI
                 GeneralNoteList.Add(noteToAdd);
                 GeneralNoteList.Sort(delegate (Note x, Note y)
                 {
-                    return Note.compareNotes(x, y);
+                    return Note.compareDate(x, y);
                 });
             }
             else
@@ -246,7 +246,7 @@ namespace CalendarAPI
                     {
                         if ((n.Importance == AlertScope.campaign || n.Importance == AlertScope.global) && calendar.isAnniversary(n.Date))
                         {
-                            if (n.NoteContent.Equals("Current Date") == false) // don't print the current date of current campaign, as that is always the current date
+                            if (n.Content.Equals("Current Date") == false) // don't print the current date of current campaign, as that is always the current date
                                 listOfNotes.Add(n);
                         }
                         else if (n.Importance == AlertScope.dontAlert && calendar.sameDate(n.Date))
@@ -298,7 +298,7 @@ namespace CalendarAPI
 
                 foreach (Timer t in ActiveCampaign.timers)
                 {
-                    if (t.keepTrack && calendar.sameDate(t.returnDateString()) == false)
+                    if (t.keepTrack && calendar.sameDate(t.Date) == false)
                     {
                         listOfTimers.Add(t);
                     }
@@ -312,7 +312,7 @@ namespace CalendarAPI
             List<Timer> displayList = findTimersToList();
             foreach (Timer t in displayList)
             {
-                t.SetDisplayString(calendar.daysTo(t.returnDateString()));
+                t.SetDisplayString(calendar.daysTo(t.Date));
             }
             return displayList;
 
@@ -323,7 +323,7 @@ namespace CalendarAPI
             if (type == noteType.generalNote)
             {
                 foreach (Note n in GeneralNoteList)
-                    if (n.NoteContent == content)
+                    if (n.Content == content)
                         return n;
             }
 
@@ -331,7 +331,7 @@ namespace CalendarAPI
             {
                 foreach (Campaign c in CampaignList)
                     foreach (Note n in c.notes)
-                        if (n.NoteContent == content)
+                        if (n.Content == content)
                             return n;
             }
             return null;

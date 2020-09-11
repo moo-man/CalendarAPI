@@ -2,43 +2,25 @@
 
 namespace CalendarAPI
 {
-    public class Timer
+    public class Timer : CalendarElement
     {
-        public int month;              // Month timer occurs;
-        public int day;                // day timer occurs;
-        public int year;               // year timer occurs;
         public bool keepTrack;         // should this timer be displayed continually until occurrence
-        public string message;  // What the timer shows when it occurs
         public int pausedTime;
-
-        [Newtonsoft.Json.JsonConstructor]
-        public Timer(int m, int d, int y, bool track, string msg)
-        {
-            month = m;
-            day = d;
-            year = y;
-            keepTrack = track;
-            message = msg;
-            pausedTime = 0;
-        }
 
         public Timer(dynamic timerJson)
         {
-            month = timerJson["month"];
-            day = timerJson["day"];
-            year = timerJson["year"];
+            //Date = timerJson["Date"];
+            Date = $"{timerJson["month"]},{timerJson["day"]},{timerJson["year"]}";
+            Content = timerJson["Content"];
             keepTrack = timerJson["keepTrack"];
-            message = timerJson["message"];
             pausedTime = timerJson["pausedTime"];
         }
 
         public Timer(string dateString, bool track, string msg)
         {
-            month = Int32.Parse(dateString.Substring(0, 2));
-            day = Int32.Parse(dateString.Substring(2, 2));
-            year = Int32.Parse(dateString.Substring(4, 4));
+            Date = dateString;
             keepTrack = track;
-            message = msg;
+            Content = msg;
             pausedTime = 0;
         }
 
@@ -61,16 +43,16 @@ namespace CalendarAPI
             if (pausedTime == 0)
             {
                 if (daysTill > 1)
-                    displayString = "\u2022 (TIMER) " + message + " (in " + daysTill + " days)";
+                    displayString = "\u2022 (TIMER) " + Content + " (in " + daysTill + " days)";
                 else
-                    displayString = "\u2022 (TIMER) " + message + " (in " + daysTill + " day)";
+                    displayString = "\u2022 (TIMER) " + Content + " (in " + daysTill + " day)";
             }
             else
             {
                 if (daysTill > 1)
-                    displayString = "\u2022 (TIMER)(PAUSED) " + message + " (in " + daysTill + " days)";
+                    displayString = "\u2022 (TIMER)(PAUSED) " + Content + " (in " + daysTill + " days)";
                 else
-                    displayString = "\u2022 (TIMER)(PAUSED) " + message + " (in " + daysTill + " day)";
+                    displayString = "\u2022 (TIMER)(PAUSED) " + Content + " (in " + daysTill + " day)";
             }
         }
 
@@ -83,14 +65,7 @@ namespace CalendarAPI
             if (pausedTime == 0)
                 return;
             else
-            {
-                string newDate;
-                newDate = currentCalendar.dateIn(pausedTime);
-
-                month = Int32.Parse(newDate.Substring(0, 2));
-                day = Int32.Parse(newDate.Substring(2, 2));
-                year = Int32.Parse(newDate.Substring(4, 4));
-            }
+                Date = currentCalendar.dateIn(pausedTime);
 
         }
 
@@ -99,30 +74,18 @@ namespace CalendarAPI
             if (pausedTime == 0)
                 Pause(currentCalendar);
             else
-                Unpause(currentCalendar);
+                Unpause();
         }
 
         public void Pause(HarptosCalendar currentCalendar)
         {
             if (pausedTime == 0)
-            {
-                pausedTime = currentCalendar.daysTo(month, day, year);
-            }
+                pausedTime = currentCalendar.daysTo(Date);
         }
 
-        public void Unpause(HarptosCalendar currentCalendar)
+        public void Unpause()
         {
             pausedTime = 0;
         }
-
-
-        public string returnDateString()
-        {
-            string monthString = HarptosCalendar.enforceMonthFormat(month.ToString());
-            string yearString = HarptosCalendar.enforceYearFormat(year.ToString());
-            string dayString = HarptosCalendar.enforceDayFormat(monthString, day.ToString(), yearString);
-            return monthString + dayString + yearString;
-        }
-
     }
 }

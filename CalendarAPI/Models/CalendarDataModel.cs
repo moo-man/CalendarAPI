@@ -7,6 +7,8 @@ namespace CalendarAPI.Models
 {
     public class CalendarDataModel
     {
-        
+        public CalendarElement [] CurrentDayElements { get; set; }
+
+
     }
 }
