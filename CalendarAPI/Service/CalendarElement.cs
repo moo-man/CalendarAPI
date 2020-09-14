@@ -10,10 +10,16 @@ namespace CalendarAPI
         protected string content;
         protected Campaign campaign;
         protected string date;
+        public uint ID { get; }
 
         public string Content { get { return content; } set { content = value; } }
 
         public Campaign Campaign { get { return campaign; } set { campaign = value; } }
+
+        public CalendarElement(uint id)
+        {
+            ID = id;
+        }
 
         public string Date { 
             get {

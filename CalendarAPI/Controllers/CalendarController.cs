@@ -51,7 +51,8 @@ namespace CalendarAPI
         public CalendarDataModel GetCalendarData()
         {
             var calendarData = new CalendarDataModel();
-            calendarData.CurrentDayElements = calendar.returnNotesToDisplay().ToArray<CalendarElement>().Concat(calendar.returnTimersToDisplay().ToArray<CalendarElement>()).ToArray();
+            calendarData.CurrentDayElements = calendar.findNotesToList().ToArray<CalendarElement>().Concat(calendar.findTimersToList().ToArray<CalendarElement>()).ToArray();
+            calendarData.CurrentMonthElements = calendar.returnMonthNotes().ToArray<CalendarElement>();
             return calendarData;
         }
     }

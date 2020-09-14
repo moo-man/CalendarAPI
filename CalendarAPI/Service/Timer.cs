@@ -7,7 +7,7 @@ namespace CalendarAPI
         public bool keepTrack;         // should this timer be displayed continually until occurrence
         public int pausedTime;
 
-        public Timer(dynamic timerJson)
+        public Timer(dynamic timerJson) : base((uint)timerJson["ID"])
         {
             //Date = timerJson["Date"];
             Date = $"{timerJson["month"]},{timerJson["day"]},{timerJson["year"]}";
@@ -16,7 +16,7 @@ namespace CalendarAPI
             pausedTime = timerJson["pausedTime"];
         }
 
-        public Timer(string dateString, bool track, string msg)
+        public Timer(uint id, string dateString, bool track, string msg) : base(id)
         {
             Date = dateString;
             keepTrack = track;
@@ -24,35 +24,27 @@ namespace CalendarAPI
             pausedTime = 0;
         }
 
-        string displayString;
-        public string DisplayString
-        {
-            get
-            {
-                return displayString;
-            }
-        }
 
         /// <summary>
         /// Sets the displaystring to be used in the listbox
         /// * (TAG) (CONTENT) (YEARS TILL/AGO or none if happened this date)
         /// </summary>
         /// <param name="daysTill">Years ago, till, or none, appended to (TAG) (CONTENT) </param>
-        public void SetDisplayString(int daysTill)
+        public string DisplayString(int daysTill)
         {
             if (pausedTime == 0)
             {
                 if (daysTill > 1)
-                    displayString = "\u2022 (TIMER) " + Content + " (in " + daysTill + " days)";
+                    return " (TIMER) " + Content + " (in " + daysTill + " days)";
                 else
-                    displayString = "\u2022 (TIMER) " + Content + " (in " + daysTill + " day)";
+                    return " (TIMER) " + Content + " (in " + daysTill + " day)";
             }
             else
             {
                 if (daysTill > 1)
-                    displayString = "\u2022 (TIMER)(PAUSED) " + Content + " (in " + daysTill + " days)";
+                    return " (TIMER)(PAUSED) " + Content + " (in " + daysTill + " days)";
                 else
-                    displayString = "\u2022 (TIMER)(PAUSED) " + Content + " (in " + daysTill + " day)";
+                    return " (TIMER)(PAUSED) " + Content + " (in " + daysTill + " day)";
             }
         }
 

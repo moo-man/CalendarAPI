@@ -9,30 +9,20 @@ namespace CalendarAPI
         public AlertScope Importance { get; set; } // who should be notified when this date is reached)
         public bool isGeneral { get { return Campaign == null; } }
 
-        string displayString;
-        public string DisplayString
-        {
-            get
-            {
-                return displayString;
-            }
-        }
-
         /// <summary>
         /// Sets the displaystring to be used in the listbox
         /// * (TAG) (CONTENT) (YEARS TILL/AGO or none if happened this date)
         /// </summary>
         /// <param name="relativity">Years ago, till, or none, appended to (TAG) (CONTENT) </param>
-        public void SetDisplayString(string relativity)
+        public string DisplayString(string relativity)
         {
             if (campaign != null)
-                displayString = "\u2022 (" + campaign.Tag + ") " + Content + " " + relativity;
+                return "(" + campaign.Tag + ") " + Content + " " + relativity;
             else
-                displayString = "\u2022 " + Content + " " + relativity;
-
+                return Content + " " + relativity;
         }
 
-        public Note(string date, AlertScope imp, string content, Campaign campaign = null)
+        public Note(uint id, string date, AlertScope imp, string content, Campaign campaign = null) : base(id)
         {
             Date = date;
             Importance = imp;
@@ -40,7 +30,7 @@ namespace CalendarAPI
             Campaign = campaign;
         }
 
-        public Note(dynamic noteJson)
+        public Note(dynamic noteJson) : base ((uint)noteJson["ID"])
         {
             Date = noteJson["Date"];
             Content = noteJson["Content"];

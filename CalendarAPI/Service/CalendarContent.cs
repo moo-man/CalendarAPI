@@ -9,7 +9,7 @@ namespace CalendarAPI
     // dontAlert will not alert any campaign when that date is reached
     // alertCampaign will alert the campaign that the note belongs to
     // alertAll will alert all campaigns in this calendar
-    public enum AlertScope { dontAlert, campaign, global }
+    public enum AlertScope { OnlyOnDateInCampaign, OnlyInCampaign, AllCampaigns}
 
     public class CalendarContents
     {
@@ -21,12 +21,15 @@ namespace CalendarAPI
 
         public Campaign ActiveCampaign { get; set; }
 
+        CalendarIDs IDManager { get;}
+
         public CalendarContents()
         {
             ActiveCampaign = null;
             calendar = new HarptosCalendar();
             CampaignList = new List<Campaign>();
             GeneralNoteList = new List<Note>();
+            IDManager = new CalendarIDs();
         }
 
         public CalendarContents(dynamic json) : this()
@@ -45,7 +48,7 @@ namespace CalendarAPI
 
         public void addNewCampaign(string name, string t, string startDate)
         {
-            Campaign newCampaign = new Campaign(name, t, startDate);
+            Campaign newCampaign = new Campaign(name, t, startDate, IDManager);
             CampaignList.Add(newCampaign);
         }
 
@@ -53,7 +56,7 @@ namespace CalendarAPI
         {
             // since the constructor of campaign requires start date (then adds a note of start date)
             // we have to start a blank campaign and add to that, kinda gross but whatev
-            Campaign loadedCampaign = new Campaign();
+            Campaign loadedCampaign = new Campaign(IDManager);
             loadedCampaign.Name = name;
             loadedCampaign.Tag = t;
             loadedCampaign.CurrentDate = currentDate;
@@ -141,7 +144,7 @@ namespace CalendarAPI
 
             List<Tuple<Note, string>> notesAndDate = new List<Tuple<Note, string>>();
 
-            List<Note> notesOnThisDay = returnNotesToDisplay();
+            List<Note> notesOnThisDay = findNotesToList();
             foreach (Note n in notesOnThisDay)
             {
                 notesAndDate.Add(new Tuple<Note, string>(n, this.calendar.ToString()));
@@ -228,13 +231,13 @@ namespace CalendarAPI
         /// Finds all notes that should be listed based on the current date of the calendar
         /// </summary>
         /// <returns></returns>
-        private List<Note> findNotesToList()
+        public List<Note> findNotesToList()
         {
             List<Note> listOfNotes = new List<Note>();
 
             foreach (Note n in GeneralNoteList)
             {
-                if (n.Importance == AlertScope.global && calendar.isAnniversary(n.Date) || (n.Importance == AlertScope.dontAlert && calendar.sameDate(n.Date)))
+                if (n.Importance == AlertScope.AllCampaigns && calendar.isAnniversary(n.Date) || (n.Importance == AlertScope.OnlyOnDateInCampaign && calendar.sameDate(n.Date)))
                     listOfNotes.Add(n);
             }
 
@@ -244,32 +247,22 @@ namespace CalendarAPI
                 {
                     if (c.Equals(ActiveCampaign)) // If the note belongs to current campaign, and has appropriate visibilty, and is anniversary of this date
                     {
-                        if ((n.Importance == AlertScope.campaign || n.Importance == AlertScope.global) && calendar.isAnniversary(n.Date))
+                        if ((n.Importance == AlertScope.OnlyInCampaign || n.Importance == AlertScope.AllCampaigns) && calendar.isAnniversary(n.Date))
                         {
                             if (n.Content.Equals("Current Date") == false) // don't print the current date of current campaign, as that is always the current date
                                 listOfNotes.Add(n);
                         }
-                        else if (n.Importance == AlertScope.dontAlert && calendar.sameDate(n.Date))
+                        else if (n.Importance == AlertScope.OnlyOnDateInCampaign && calendar.sameDate(n.Date))
                             listOfNotes.Add(n);
                     }
 
                     else // If the note does not belong in the current campaign
-                        if ((n.Importance == AlertScope.global) && calendar.isAnniversary(n.Date)) // if the note happened on this day and is of                                                                                        // sufficient importance level
+                        if ((n.Importance == AlertScope.AllCampaigns) && calendar.isAnniversary(n.Date)) // if the note happened on this day and is of                                                                                        // sufficient importance level
                         listOfNotes.Add(n);
                 } // end foreach note
             } // end foreach campaign
 
             return listOfNotes;
-        }
-
-        public List<Note> returnNotesToDisplay()
-        {
-            List<Note> displayList = findNotesToList();
-            foreach (Note n in displayList)
-            {
-                n.SetDisplayString(ReturnRelativity(n));
-            }
-            return displayList;
         }
 
         private string ReturnRelativity(Note n)
@@ -288,7 +281,7 @@ namespace CalendarAPI
                 return ("Error.");
         }
 
-        private List<Timer> findTimersToList()
+        public List<Timer> findTimersToList()
         {
             List<Timer> listOfTimers = new List<Timer>();
 
@@ -307,14 +300,34 @@ namespace CalendarAPI
             return listOfTimers;
         }
 
-        public List<Timer> returnTimersToDisplay()
+        public List<Note> returnMonthNotes()
         {
-            List<Timer> displayList = findTimersToList();
-            foreach (Timer t in displayList)
+            List<Note> listOfNotes = new List<Note>();
+
+            foreach (Note n in GeneralNoteList)
             {
-                t.SetDisplayString(calendar.daysTo(t.Date));
+                if (calendar.sameMonth(n.Date))
+                    listOfNotes.Add(n);
             }
-            return displayList;
+
+            foreach (Campaign c in CampaignList)
+            {
+                foreach (Note n in c.notes)
+                {
+                    if (c.Equals(ActiveCampaign))
+                    {
+                        if (calendar.sameMonth(n.Date))
+                            listOfNotes.Add(n);
+                    }
+                    else
+                    {
+                        if (n.Importance == AlertScope.AllCampaigns && calendar.sameMonth(n.Date))
+                            listOfNotes.Add(n);
+                    }
+                } 
+            } 
+
+            return listOfNotes;
 
         }
 
@@ -360,7 +373,7 @@ namespace CalendarAPI
 
             if (noteToTest.Campaign != null &&                                          // If campaign is not null (note not general)
         (noteToTest.Campaign.getCurrentDateOrEndNote() == noteToTest ||   // AND (the note is not the currentdate note OR the begin note)
-        noteToTest.Campaign.returnBeginNote() == noteToTest))
+        noteToTest.Campaign.getStartNote() == noteToTest))
                 return false;
             else
                 return true;

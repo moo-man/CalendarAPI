@@ -554,6 +554,27 @@ namespace CalendarAPI
                 return isAnniversary(Int32.Parse(splitDate[0]), Int32.Parse(splitDate[1]));
         }
 
+
+        /// <summary>
+        /// Test if date is the same month as test date date
+        /// </summary>
+        /// <param name="testDate">Date to test</param>
+        /// <returns></returns>
+        public bool sameMonth(string testDate)
+        {
+            return Int32.Parse(testDate.Split(",")[0]) == month;
+        }
+
+        /// <summary>
+        /// Test if date is the same month and year as current date
+        /// </summary>
+        /// <param name="testDate">Date to test</param>
+        /// <returns></returns>
+        public bool sameMonthAndYear(string testDate)
+        {
+            return Int32.Parse(testDate.Split(",")[2]) == year && sameMonth(testDate);
+        }
+
         /// <summary>
         /// tests if input date is an anniversary of the current date
         /// </summary>

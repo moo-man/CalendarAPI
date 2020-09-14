@@ -15,57 +15,19 @@ namespace CalendarAPI
         public List<Timer> timers;
         string currentDate;
 
-        public Campaign(string n, string t, string startDate) : this(n, t, startDate, startDate)
+        bool ended;
+        public bool IsEnded
         {
-
-        }
-
-        public Campaign(string n, string t, string startDate, string currDate)
-        {
-            notes = new List<Note>();
-            timers = new List<Timer>();
-            name = n;
-            tag = t;
-            if (Note.VerifyDate(startDate))
+            get
             {
-                string msg = name + " began!";
-                addNote(startDate, AlertScope.global, msg);
-                currentDate = currDate;
+                return ended;
             }
-            if (Note.VerifyDate(currDate))
+            set
             {
-                string msg = "Current Date";
-                addNote(currentDate, AlertScope.global, msg);
-                currentDate = currDate;
+                ended = value;
+                SetEndNoteContent();
             }
         }
-
-        public Campaign()
-        {
-            notes = new List<Note>();
-            timers = new List<Timer>();
-        }
-        public Campaign(dynamic campaignJson)
-        {
-            notes = new List<Note>();
-            foreach (var note in campaignJson["notes"])
-            {
-                Note loadedNote = new Note(note);
-                addNote(loadedNote);
-            }
-
-            timers = new List<Timer>();
-            foreach (var timer in campaignJson["timers"])
-            {
-                Timer loadedTimer = new Timer(timer);
-                addTimer(loadedTimer);
-            }
-
-            Tag = campaignJson["Tag"];
-            Name = campaignJson["Name"];
-            CurrentDate = campaignJson["CurrentDate"];
-        }
-
         public string Tag
         {
             get { return tag; }
@@ -84,6 +46,64 @@ namespace CalendarAPI
             set { setCurrentDate(value); }
         }
 
+        public uint StartingNoteID { get; }
+        public uint CurrentNoteID { get; }
+
+        CalendarIDs IDManager { get; }
+
+        public Campaign(string n, string t, string startDate, CalendarIDs IDManager) : this(n, t, startDate, startDate, IDManager)
+        {
+        }
+
+        public Campaign(string n, string t, string startDate, string currDate, CalendarIDs IDManager)
+        {
+            notes = new List<Note>();
+            timers = new List<Timer>();
+            name = n;
+            tag = t;
+            this.IDManager = IDManager;
+            if (Note.VerifyDate(startDate))
+            {
+                string msg = name + " began!";
+                StartingNoteID = addNote(startDate, AlertScope.AllCampaigns, msg);
+                currentDate = currDate;
+            }
+            if (Note.VerifyDate(currDate))
+            {
+                string msg = "Current Date";
+                CurrentNoteID = addNote(currentDate, AlertScope.AllCampaigns, msg);
+                currentDate = currDate;
+            }
+        }
+
+        public Campaign(CalendarIDs IDManager)
+        {
+            notes = new List<Note>();
+            timers = new List<Timer>();
+            this.IDManager = IDManager;
+        }
+        public Campaign(dynamic campaignJson, CalendarIDs IDManager)
+        {
+            notes = new List<Note>();
+            foreach (var note in campaignJson["notes"])
+            {
+                Note loadedNote = new Note(note);
+                addNote(loadedNote);
+            }
+
+            timers = new List<Timer>();
+            foreach (var timer in campaignJson["timers"])
+            {
+                Timer loadedTimer = new Timer(timer);
+                addTimer(loadedTimer);
+            }
+
+            Tag = campaignJson["Tag"];
+            Name = campaignJson["Name"];
+            CurrentDate = campaignJson["CurrentDate"];
+            this.IDManager = IDManager;
+        }
+
         public void setCurrentDate(string newDate)
         {
             Note currOrEndNote = getCurrentDateOrEndNote();
@@ -97,98 +117,35 @@ namespace CalendarAPI
             if (name == null)
                 name = newName;
             else
-            {
-                Note endNote = getCurrentDateOrEndNote();
-                if (isEnded())
-                    endNote.Content= newName + " ended.";
-                else
-                    endNote.Content = "Current Date";
+                SetEndNoteContent();
+        }
 
-                Note startNote = notes.Find(x => x.Content == name + " began!");
-                startNote.Content = newName + " began!";
-
-                name = newName;
-            }
+        private void SetEndNoteContent()
+        {
+            Note endNote = getCurrentDateOrEndNote();
+            if (ended)
+                endNote.Content = name + " ended.";
+            else
+                endNote.Content = "Current Date";
         }
 
         public void setStartDate(string newStartDate)
         {
-            Note startNote = notes.Find(x => x.Content == name + " began!");
-            startNote.Content = newStartDate;
+            var startNote = getStartNote();
+            startNote.Date = newStartDate;
         }
-
-        /*public void setStartDate(string newStartDate, string newCampaigName)
-        {
-            Note startNote = notes.Find(x => x.Content == name + " began!");
-            startNote.editDate(newStartDate);
-            startNote.editContent(newCampaigName + " began!");
-        }*/
 
         public void setCurrentDate(int m, int d, int y)
         {
-            StringBuilder newDate = new StringBuilder();
-            if (m < 10)
-                newDate.Append("0" + m);
-            else
-                newDate.Append(m);
-
-            if (d < 10)
-                newDate.Append("0" + d);
-            else
-                newDate.Append(d);
-
-            string yString = y.ToString();
-            while (yString.Length < 4)
-                yString.Insert(0, "0");
-
-            newDate.Append(yString);
-
-            setCurrentDate(String.Format("{0},{1},{2}", m.ToString("00"), d.ToString("00"), y.ToString()));
+            setCurrentDate(String.Format("{0},{1},{2}", m.ToString(), d.ToString(), y.ToString()));
         }
 
-        public Note returnBeginNote()
+        public uint addNote(string date, AlertScope importance, string content)
         {
-            return notes.Find(x => x.Content == Name + " began!");
-        }
-
-        #region starting/ending campaign
-        public void endCampaign()
-        {
-            Note endNote = findNote("Current Date");
-            if (endNote == null)
-                return;
-            endNote.Content = endNote.Campaign.Name + " ended.";
-        }
-
-        public void startCampaign()
-        {
-            Note endNote = findNote(Name + " ended.");
-            if (endNote == null)
-                return;
-            endNote.Content = "Current Date";
-        }
-
-        public bool isEnded()
-        {
-            if (findNote("Current Date") == null && findNote(Name + " ended.") != null)
-                return true;
-
-            else return false;
-        }
-
-        public void toggleEnded()
-        {
-            if (isEnded())
-                startCampaign();
-            else
-                endCampaign();
-        }
-        #endregion
-
-        public void addNote(string date, AlertScope importance, string note)
-        {
-            notes.Add(new Note(date, importance, note, this));
+            var note = new Note(IDManager.nextID(), date, importance, content, this);
+            notes.Add(note);
             sortNotes();
+            return note.ID;
         }
 
         public void addNote(Note noteToAdd)
@@ -209,13 +166,14 @@ namespace CalendarAPI
                 return t.ToUpper();
         }
 
-        // Returns the note "Current Date" or "ended"
         public Note getCurrentDateOrEndNote()
         {
-            if (isEnded())
-                return findNote(Name + " ended.");
-            else
-                return findNote("Current Date");
+            return findNote(CurrentNoteID);
+        }
+
+        public Note getStartNote()
+        {
+            return findNote(StartingNoteID);
         }
 
         public void SetDisplayValues()
@@ -230,12 +188,9 @@ namespace CalendarAPI
             });
         }
 
-        public Note findNote(string content)
+        public Note findNote(uint id)
         {
-            foreach (Note n in notes)
-                if (n.Content == content)
-                    return n;
-            return null;
+            return notes.Find(n => n.ID == id);
         }
 
         public void addTimer(Timer t)
@@ -251,6 +206,5 @@ namespace CalendarAPI
                     count++;
             return count; ;
         }
-
     }
 }
